@@ -72,7 +72,7 @@ def load_data():
         df = pd.read_sql("SELECT * FROM jobs", conn)
         conn.close()
     except:
-        df = pd.read_csv("data/sample_jobs.csv")
+        df = pd.read_csv("sample_jobs.csv")
     return df
 
 df = load_data()
